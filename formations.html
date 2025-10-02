@@ -62,6 +62,60 @@ html {
 .header-nav a:hover {
   text-decoration: underline;
 }
+
+.block-devenir {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+/* Conteneur global */
+.block-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Titre en haut */
+.block-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Deux colonnes */
+.block-columns-img {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Colonne texte */
+.block-text {
+  flex: 1;
+  padding-left: 5%;
+}
+
+.block-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* Colonne image */
+.block-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.block-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 .site-footer {
   background: #000;
   color: #fff;
@@ -157,16 +211,6 @@ html {
 .footer-col a:hover {
   text-decoration: underline;
 }
-
-/* Bas de page */
-.footer-bottom {
-  text-align: center;
-  padding-top: 15px;
-  background-color: white;
-  color: black;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
     </style>
 </head>
 <body>
@@ -185,6 +229,30 @@ html {
     </nav>
   </div>
 </header>
+<section class="block-devenir">
+  <div class="block-container">
+    <!-- Titre en haut -->
+    <h1 class="block-title">Titre</h1>
+
+    <!-- Deux colonnes -->
+    <div class="block-columns-img">
+      <!-- Colonne gauche : texte -->
+      <div class="block-text">
+
+        <p>
+         Nos formations ingénieurs
+        </p>
+      </div>
+
+      <!-- Colonne droite : image -->
+      <div class="block-image">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="">*
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="footer-container">
