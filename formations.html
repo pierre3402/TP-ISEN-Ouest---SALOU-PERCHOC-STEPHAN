@@ -61,61 +61,57 @@ html {
 
 .header-nav a:hover {
   text-decoration: underline;
-}
 
-.block-devenir {
-  background: #fff;
-  padding: 60px 20px;
 }
-
-/* Conteneur global */
-.block-container {
+.dp-section {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 0 20px;
 }
-
-/* Titre en haut */
-.block-title {
-  font-size: 42px;
+.dp-section h2 {
+  font-size: 24px;
   font-weight: 700;
+  margin-bottom: 30px;
   color: #000;
-  margin-bottom: 40px;
-  text-align: left;
 }
-
-/* Deux colonnes */
-.block-columns-img {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.dp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
 }
-
-/* Colonne texte */
-.block-text {
-  flex: 1;
-  padding-left: 5%;
+.dp-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease;
+padding: 3px 3px 0;
+position: relative;
 }
-
-.block-text p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #333;
-  margin-bottom: 18px;
+.dp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
-
-/* Colonne image */
-.block-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.block-image img {
-  max-width: 100%;
+.dp-card img {
+  width: 100%;
   height: auto;
-  border-radius: 6px;
+  display: block;
 }
-
+.dp-card p {
+padding: 1px 0.5em;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+background-color: #05819d;
+color: white;
+font-weight: bold;
+display: inline;
+position: absolute;
+  bottom: 1em;
+  left: 0;
+  margin: 0;
+}
 .site-footer {
   background: #000;
   color: #fff;
@@ -211,6 +207,16 @@ html {
 .footer-col a:hover {
   text-decoration: underline;
 }
+
+/* Bas de page */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
     </style>
 </head>
 <body>
@@ -229,31 +235,27 @@ html {
     </nav>
   </div>
 </header>
-<section class="block-devenir">
-  <div class="block-container">
-    <!-- Titre en haut -->
-    <h1 class="block-title">Titre</h1>
-
-    <!-- Deux colonnes -->
-    <div class="block-columns-img">
-      <!-- Colonne gauche : texte -->
-      <div class="block-text">
-
-        <p>
-         Nos formations ingénieurs
-        </p>
+<section class="dp-section">
+    <h2>Nos formations ingénieurs</h2>
+    <div class="dp-grid">
+      <div class="dp-card">
+        <a href="https://isen-ouest.fr">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="légende">
+        </a>
       </div>
-
-      <!-- Colonne droite : image -->
-      <div class="block-image">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="">*
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="">
+      <div class="dp-card">
+        <a href="https://isen-ouest.fr">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="légende">
+        </a>
       </div>
+      <div class="dp-card">
+        <a href="https://isen-ouest.fr">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="légende">
+        </a>
+      </div>
+    
     </div>
-  </div>
-</section>
-
+  </section>
 <footer class="site-footer">
   <div class="footer-container">
 
